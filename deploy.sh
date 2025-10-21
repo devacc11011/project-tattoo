@@ -7,15 +7,15 @@
 set -e
 
 # 기본 설정
-GIT_URL="https://github.com/devacc11011/project-cron.git"
+GIT_URL="https://github.com/devacc11011/project-tattoo.git"
 BRANCH=${1:-main}
 BACKEND_PORT=${2:-8280}
 FRONTEND_PORT=${3:-3200}
-PROJECT_NAME="project-cron"
+PROJECT_NAME="project-tattoo"
 DEPLOY_DIR="/tmp/${PROJECT_NAME}-deploy"
 
 echo "=========================================="
-echo "Project Cron 배포 스크립트"
+echo "Project Tattoo 배포 스크립트"
 echo "=========================================="
 echo "Git URL: ${GIT_URL}"
 echo "브랜치: ${BRANCH}"
