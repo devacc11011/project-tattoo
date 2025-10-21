@@ -1,3 +1,5 @@
+import BackendStatus from "@/components/BackendStatus";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -191,8 +193,11 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-border text-center text-muted-foreground">
-            <p>&copy; 2025 Tattoo Platform. All rights reserved.</p>
+          <div className="pt-8 border-t border-border">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p className="text-muted-foreground text-sm">&copy; 2025 Tattoo Platform. All rights reserved.</p>
+              <BackendStatus />
+            </div>
           </div>
         </div>
       </footer>
